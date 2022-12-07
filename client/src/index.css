@@ -1,0 +1,226 @@
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("./assets/fonts/ProximaNova-Semibold.woff") format("woff"),
+    url("./assets/fonts/ProximaNova-Semibold.ttf") format("truetype"),
+    url("./assets/fonts/ProximaNova-Semibold.eot") format("embedded-opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+body {
+  background-color: rgb(243, 236, 236);
+  font-family: "Proxima Nova";
+  src: url("./assets/fonts/ProximaNova-Semibold.woff") format("woff"),
+    url("./assets/fonts/ProximaNova-Semibold.ttf") format("truetype"),
+    url("./assets/fonts/ProximaNova-Semibold.eot") format("embedded-opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+.title-quiz{
+  color: rgb(139, 133, 115); 
+}
+.login-bee {
+  position: relative;
+  top: 50px;
+}
+
+
+.bee-top {
+  border: 1px solid rgb(141, 109, 29);
+}
+
+label, .input-quiz, .quiz-h {
+  position: relative;
+  left: 100px;  
+}
+/* .login-btn, .signin-btn {
+  posti
+} */
+
+
+.container-fluid {
+    margin-top: 50px
+}
+
+.footer-copyright {
+    margin-top: 13px
+}
+
+a {
+    text-decoration: none !important;
+    color: #777a7c
+}
+
+.description {
+    font-size: 12px
+}
+
+.fa-facebook-f {
+    color: #3b5999
+}
+
+.fa-instagram {
+    color: #e4405f
+}
+
+.fa-youtube {
+    color: #cd201f
+}
+
+.fa-twitter {
+    color: #55acee
+}
+
+.logo-footer{
+    height:30px;
+}
+
+.footer-copyright p {
+    margin-top: 10px
+}
+.trending {
+  color: rgb(139, 133, 115); ;
+}
+.header-quiz {
+  margin-top: 40px;
+  
+ color: rgb(139, 133, 115); 
+}
+.form-quiz{
+  padding-top: 20px;
+  color: #674f20;
+  bottom: 45px;
+  background-color: #ffffff;
+
+}
+.flowers {
+  /* position: relative; */
+  width: 300px;  
+  
+}
+.logo {
+  width: 130px;
+}
+.bee {
+  width: 150px;
+}
+.speech-bubble {
+  position: relative;
+  translate: 210px;
+  bottom: 120px;
+  background: #e4b14b;
+  border-radius: 0.4em;
+  width: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 15px;
+  color: white;
+}
+.greeting {
+  font-size: 35px;
+}
+.line {
+  width: 800px;
+  translate: 300px;
+}
+.card-name {
+  margin-top: 10px;
+}
+
+.card-top {
+  width: 90px;
+  height: 200px;
+  border-radius: 10px;
+  border: 1px solid brown;
+  background-color: #ffffff;
+}
+
+.card-text {
+  color: #555;
+  font-size: 14px;
+}
+.category {
+  border: solid, 1px, rgb(210, 134, 28);
+  border-radius: 20px;
+  color: rgb(160, 120, 79);
+  background-color: rgb(254, 254, 253);
+  margin: 5px;
+  padding: 6px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  transition-duration: 0.4s;
+}
+
+.title-main {
+  color: #b6a28b;
+  padding-top: 5px;
+}
+
+.category:hover {
+  background-color: #dab383;
+  color: white;
+}
+.card-top {
+  width: 400px;
+  color: #555;
+  border: solid 2px rgb(157, 112, 68);
+  box-shadow: 5px 5px rgb(231, 206, 186);
+  text-align: center;
+  margin: 5px;
+}
+
+.card {
+  color: #555;
+  border: solid 2px rgb(157, 112, 68);
+  box-shadow: 5px 5px rgb(231, 206, 186);
+  text-align: center;
+  width: 450;
+  margin: 5px;
+}
+
+.card-title {
+  padding-top: 3px;
+  padding-bottom: 4px;
+  border-bottom: rgb(227, 216, 199) solid 2px;
+}
+.card-subtitle {
+  padding-top: 4px;
+}
+.mquiz-img {
+  width: 395px;
+  margin-bottom: 5px;
+}
+.image {
+  width: 150px;
+  padding-bottom: 2px;
+}
+.img-top {
+  width: 50px !important;
+  margin-top: 10px;
+}
+. {
+  width: 50px;
+}
+
+/* Webkit Scrollbar Deco */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #edebe9;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(222, 140, 26);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(94, 92, 89);
+}

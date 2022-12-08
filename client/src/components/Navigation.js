@@ -14,34 +14,34 @@ const Navigation = () => {
   const { appState, setAppState, logout } = useAppContext();
 
   return (
-    <Navbar bg="light" variant="light" expand="lg">
-      <Container>
-        <Navbar.Brand as={Link} to="/home">
-          <img className="logo" src={logo} alt="buzzbuzz logo" />
+    <>
+    <Navbar className="nav-header" variant="light" expand="lg">
+      <Container fluid>
+        <Navbar.Brand className="nav-title" as={Link} to="/home" >PopQuiz
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link as={Link} to="/home">
+        <Navbar.Toggle aria-controls="navbar" />
+        <Navbar.Collapse id="navbar">
+          <Nav className="ml-auto">
+            <Nav.Link className="nav-body" as={Link} to="/home">
               Home
             </Nav.Link>
 
-            <Nav.Link as={Link} to="/quizzes">
+            <Nav.Link className="nav-body" as={Link} to="/quizzes">
               Quizzes
             </Nav.Link>
 
-            <Nav.Link as={Link} to="/user/:id">
+            <Nav.Link className="nav-body" as={Link} to="/user/:id">
               Profile
             </Nav.Link>
 
             {(!appState || !appState.user) && (
-              <Nav.Link as={Link} to="/">
+              <Nav.Link className="nav-body" as={Link} to="/">
                 Login
               </Nav.Link>
             )}
 
             {appState && appState.user && (
-              <Nav.Link as={Link} to="/" onClick={logout}>
+              <Nav.Link className="nav-body" as={Link} to="/" onClick={logout}>
                 Logout
               </Nav.Link>
             )}
@@ -49,6 +49,7 @@ const Navigation = () => {
         </Navbar.Collapse>
       </Container>
     </Navbar>
+    </>
   );
 };
 

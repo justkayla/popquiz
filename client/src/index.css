@@ -1,3 +1,34 @@
+body {
+  font-family: 'Nerko One', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Nerko One', sans-serif;
+}
+
+/* Navbar */
+.nav-header {
+  background-color: pink;  
+}
+
+.nav-title {
+  font-size: 3rem;
+  color: 
+}
+
+.nav-body {
+  font-size: 1.5rem;
+}
+
+
+
+
+/* 
 @font-face {
   font-family: "Proxima Nova";
   src: url("./assets/fonts/ProximaNova-Semibold.woff") format("woff"),
@@ -14,7 +45,7 @@ body {
     url("./assets/fonts/ProximaNova-Semibold.eot") format("embedded-opentype");
   font-weight: 600;
   font-style: normal;
-}
+} */
 .title-quiz{
   color: rgb(139, 133, 115); 
 }
@@ -199,9 +230,6 @@ a {
 .img-top {
   width: 50px !important;
   margin-top: 10px;
-}
-. {
-  width: 50px;
 }
 
 /* Webkit Scrollbar Deco */

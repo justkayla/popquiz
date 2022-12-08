@@ -1,7 +1,13 @@
 const RadioButton = ({ id, name, value, text }) => {
   return (
     <>
-      <input className="input-quiz" type="radio" id={id} name={name} value={value} />
+      <input
+        className="input-quiz"
+        type="radio"
+        id={id}
+        name={name}
+        value={value}
+      />
       <label htmlFor={id}>{text}</label>
       <br />
     </>

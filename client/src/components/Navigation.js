@@ -1,11 +1,10 @@
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { useAppContext } from "../utils/AppContext";
 import { Link } from "react-router-dom";
-import logo from "../assets/logo.png";
 
 /**
  * If user is logged in
- * Display Home, Quizzes, Profile, and Logout tabs
+ * Display Home, Quizzes, Dashboard, and Logout tabs
  * else (if user is not logged in)
  * Display only Login tab
  */
@@ -15,40 +14,42 @@ const Navigation = () => {
 
   return (
     <>
-    <Navbar className="nav-header" variant="light" expand="lg">
-      <Container fluid>
-        <Navbar.Brand className="nav-title" as={Link} to="/home" >PopQuiz
-        </Navbar.Brand>
-        <Navbar.Toggle aria-controls="navbar" />
-        <Navbar.Collapse id="navbar">
-          <Nav className="ml-auto">
-            <Nav.Link className="nav-body" as={Link} to="/home">
-              Home
-            </Nav.Link>
-
-            <Nav.Link className="nav-body" as={Link} to="/quizzes">
-              Quizzes
-            </Nav.Link>
-
-            <Nav.Link className="nav-body" as={Link} to="/user/:id">
-              Profile
-            </Nav.Link>
-
-            {(!appState || !appState.user) && (
-              <Nav.Link className="nav-body" as={Link} to="/">
-                Login
+      <Navbar className="nav-header" variant="light" expand="lg">
+        <Container fluid>
+          <Navbar.Brand className="nav-title" as={Link} to="/home">
+            PopQuiz
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="navbar" />
+          <Navbar.Collapse id="navbar">
+            <Nav style={{ marginLeft: "auto" }}>
+              <Nav.Link className="nav-body" as={Link} to="/quizzes">
+                Quizzes
               </Nav.Link>
-            )}
 
-            {appState && appState.user && (
-              <Nav.Link className="nav-body" as={Link} to="/" onClick={logout}>
-                Logout
+              <Nav.Link className="nav-body" as={Link} to="/user/:id">
+                Dashboard
               </Nav.Link>
-            )}
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+
+              {(!appState || !appState.user) && (
+                <Nav.Link className="nav-body" as={Link} to="/">
+                  Login
+                </Nav.Link>
+              )}
+
+              {appState && appState.user && (
+                <Nav.Link
+                  className="nav-body"
+                  as={Link}
+                  to="/"
+                  onClick={logout}
+                >
+                  Logout
+                </Nav.Link>
+              )}
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>           
     </>
   );
 };

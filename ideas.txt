@@ -1,0 +1,26 @@
+PopQuiz: A pop culture quiz application that allows logged in/registered users to search for, take, and save their favorite quizzes to their dashboard. Non-registered/logged in users can search and take quizzes, but they are not able to save them to their dashboard.
+
+Using Challenge 21 (MERN Book Search Engine) as a reference--
+
+"Homepage"
+- Search bar for quizzes
+
+"Dashboard"
+- Any saved quizzes for a logged in user
+
+Navbar and login/sign up modal
+- Adjust navbar according to whether a user is logged in or not
+- Instead of having login/signup routes, handle using modal
+
+TODOs
+- Modify User model to include more validation
+- Refactor controllers (and seeds?)
+- Update DB to reflect popquiz versus mernstack
+- Add search bar / modify quiz form generation
+- Address the warnings in terminal (...)
+- Keep focus on responsive design
+- New browser favicon!
+
+Questions
+- How do reviews function in this application? Do we even want to do reviews? Are we interested in implementing a star rating system?
+- Better way to do authentication? Feels clunky

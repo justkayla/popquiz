@@ -1,7 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { AppProvider } from "./utils/AppContext";
-import Container from "react-bootstrap/Container";
 
 import Home from "./pages/Home";
 import Quizzes from "./pages/Quizzes";
@@ -10,7 +9,6 @@ import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import PageNotFound from "./pages/404";
 import Navigation from "./components/Navigation";
-
 
 function App() {
   return (

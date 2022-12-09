@@ -24,6 +24,9 @@ const seedReviews = [
 ];
 
 const seed = async () => {
+
+  await Review.deleteMany({});
+
   const queryFirst = await Review.find({});
   if (queryFirst && queryFirst.length === 0) {
     console.log("seeding reviews...");

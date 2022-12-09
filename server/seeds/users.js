@@ -35,6 +35,9 @@ const seedUsers = [
 ];
 
 const seed = async () => {
+
+  await User.deleteMany({});
+
   const queryFirst = await User.find({});
   if (queryFirst && queryFirst.length === 0) {
     console.log("seeding users...");

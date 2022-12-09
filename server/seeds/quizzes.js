@@ -103,6 +103,9 @@ const seedQuizzes = [
 ];
 
 const seed = async () => {
+
+  await Quiz.deleteMany({});
+
   const queryFirst = await Quiz.find({});
   if (queryFirst && queryFirst.length === 0) {
     console.log("seeding quizzes...");
